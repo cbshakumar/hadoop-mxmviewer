@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Hadoopin",
+  "description": "This extension is for viewing mxms in their prettified view.",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "agentjackson.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://jumbo.careerbuilder.com/*"],
+      "css": ["jquery-ui.theme.min.css", "jquery-ui.structure.min.css"],
+      "js": ["jquery.js", "jquery-ui.min.js", "mxmviewer.js"]
+    }
+  ]
+}
